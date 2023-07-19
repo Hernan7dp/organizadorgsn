@@ -1,0 +1,293 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 oct. 2020, 22:19:11
+    Author     : Hernan Pereira
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #B1C4E2;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(90deg, #1D406D, #3F67A9);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#background{
+    background: url("../images/paisaje.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*.subtitle h2 {
+        font-size: 16px;
+    }*/
+#contenedor, #contenedorus {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#contenedorus {
+    margin-top: 40px;
+}
+#ingreso, #registro, #nuevo {
+    background-color: #f1f1f1;
+    width: 320px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+#ingreso form, #registro form, #nuevo form {
+    text-align: center;
+    margin: 10px auto;
+    color: #3F67A9;
+    font-weight: bold;
+}
+#ingreso form input, #registro form input, #nuevo form input{
+    color: black;
+    margin-bottom: 10px;
+    padding: 5px;
+    min-width: 95%;
+    border-radius: 10px;
+}
+#nuevo form input{
+    min-width: 0%;
+}
+#nuevo form textarea {
+    min-width: 90%;
+    margin-bottom: 10px;
+    color: black;
+}
+#ingreso form input[type=submit], #registro form input[type=submit], #nuevo form input[type=submit] {
+    padding: 5px;
+    margin-top: 10px;
+    min-width: 75%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+}
+#ingreso form:-internal-autofill-selected {
+    border-radius: 10px;
+}
+#registro form input:-internal-autofill-selected {
+    border-radius: 10px;
+}
+.g-recaptcha {
+    margin: 0 8px;
+}
+#error {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #305B86, #000000);
+}
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#header {
+    background-image: linear-gradient(90deg, #305B86, #000000);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#intro {
+    max-width: 1300px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.central img {
+    width: 70%;
+}
+#navbar {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #B1C4E2;
+    margin: 30px auto;
+}
+ul.horizontal{
+    margin:0;
+    padding:0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul.horizontal li{
+    display:block;
+    float:left;
+}
+ul.horizontal li a{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #1D406D;
+    padding: 10px 20px;
+}
+ul.horizontal li a:hover{
+    color: #1D406D;
+    font-weight: bold;
+    background-color: #B1C4E2;
+}
+#conexion {
+    width: 20%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    text-align: center;
+}
+#conexion ul.horizontal li a{
+    background-color: transparent;
+}
+#conexion ul.horizontal li a:hover{
+    background-color: transparent;;
+}
+.title {
+    margin-top: 40px;
+}
+.subtitle {
+    margin-top: 120px;
+}
+.subtitle2 h4 {
+        margin-top: 20px;
+}
+#new {
+        margin-top: 20px;
+}
+#cen1img, #cen2img, #cen3img, #cen4img, #cen5img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cen1img {
+  background-image: url("../images/home.png");
+}
+#cen2img {
+  background-image: url("../images/users.png");
+}
+#cen3img {
+  background-image: url("../images/assignment.png");
+}
+#cen4img {
+  background-image: url("../images/projects.png");
+}
+#cen5img {
+  background-image: url("../images/tasks.png");
+}
+#cen1img:hover {
+  background-image: url("../images/home2.png");
+}
+#cen2img:hover {
+  background-image: url("../images/users2.png");
+}
+#cen3img:hover {
+  background-image: url("../images/assignment2.png");
+}
+#cen4img:hover {
+  background-image: url("../images/projects2.png");
+}
+#cen5img:hover {
+  background-image: url("../images/tasks2.png");
+}
+table {
+    max-width: 1200px;
+    margin-top: 100px;
+}
+td {
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #1D406D;
+}
+#asignacion form  {
+    text-align: left;
+    margin-left: 90px;
+}
+#tarea form  {
+    text-align: left;
+    margin-left: 30px;
+}
+#asignacion form input[type=submit], #tarea form input[type=submit] {
+    padding: 5px;
+    margin-top: 10px;
+    min-width: 55%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+}
+#asignacion form .subtitle2 h4, #tarea form .subtitle2 h4 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:830px) {
+    #intro {
+        margin-top: 80px;
+    }
+    #cen1img, #cen2img, #cen3img, #cen4img, #cen5img {
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+    }
+    .title {
+        margin-top: 100px;
+    }
+    #conexion {
+        width: 100%;
+        right: auto;
+    }
+    #navbar {
+        margin-top: 100px;
+    }
+    .subtitle h2 {
+        font-size: 20px;
+        margin-top: 140px;
+    }
+    .subtitle2 h4 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    #new {
+        margin-top: 20px;
+    }
+    table {
+        margin-top: 40px;
+    }
+    ul.horizontal li a{
+        padding: 10px 10px;
+    }
+}
